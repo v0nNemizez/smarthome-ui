@@ -79,10 +79,7 @@ const createWsLink = async () => {
     return connectWithRateLimit(() => new GraphQLWsLink(createClient({
         url: wsUrl,
         connectionParams: {
-            headers: {
-                'Authorization': `Bearer ${apiToken}`,
-                'User-Agent': userAgent,
-            },
+            token: apiToken
         },
         retryAttempts: 1,
         retryWait: (retryCount) => Math.min(1000 * 2 ** retryCount, 30000) + Math.random() * 1000,
