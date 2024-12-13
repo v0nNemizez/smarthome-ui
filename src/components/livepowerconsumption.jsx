@@ -21,7 +21,7 @@ const LiveMeasurement = ({ homeId }) => {
         <div>
             <p>Power: {power}</p>
             <p>Accumulated Consumption: {accumulatedConsumption}</p>
-            <p>Accumulated Cost: {accumulatedCost} {currency}</p>
+            <p>Accumulated Cost: {accumulatedCost.toLocaleString('nb-NO', { style: 'currency', currency })}</p>
             <p>Min Power: {minPower}</p>
             <p>Average Power: {averagePower}</p>
             <p>Max Power: {maxPower}</p>

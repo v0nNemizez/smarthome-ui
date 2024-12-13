@@ -1,6 +1,6 @@
 import React from "react";
 import 'bootstrap/dist/css/bootstrap.min.css'; // Bootstrap CSS
-import { Container, Row, Col, Button, Navbar, Nav } from "react-bootstrap";
+import { Container, Row, Col, Navbar, Nav } from "react-bootstrap";
 import LiveMeasurement from "./components/livepowerconsumption";
 import Name from "./components/name";
 
