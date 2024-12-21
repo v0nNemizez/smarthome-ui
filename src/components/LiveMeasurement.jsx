@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import { useSubscription } from "@apollo/client";
 import { LIVE_MEASUREMENT_SUBSCRIPTION } from "../queries";
